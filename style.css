@@ -1,0 +1,151 @@
+
+* {
+  margin: 2px;
+  padding: 2px;
+  box-sizing: border-box;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+}
+
+.calc-body {
+  background-color: rgb(212, 207, 207);
+  border-radius: 8px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20%;
+}
+
+.clear,
+.backspace,
+.add,
+.seven,
+.eight,
+.nine,
+.subtract,
+.four,
+.five,
+.six,
+.multiply,
+.one,
+.two,
+.three,
+.divide,
+.zero,
+.equal,
+.input-box {
+  height: 50px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+}
+.btn:hover {
+ box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+.input-box {
+  font-family: "Roboto", sans-serif;
+  background-color: #e9fada;
+  color: black;
+  font-size: 30px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  font-weight: 400;
+  grid-area: input;
+}
+
+.clear {
+  background-color: red;
+  color: #fff;
+  grid-area: clear;
+  border-width: 1px;
+}
+.backspace {
+  background-color: #453727;
+  color: #fff;
+  grid-area: backspace;
+  border-width: 1px;
+}
+.add {
+  background-color: #ff8c00;
+  color: #fff;
+  border-width: 1px;
+  grid-area: add;
+}
+.seven {
+  grid-area: seven;
+}
+.eight {
+  grid-area: eight;
+}
+.nine {
+  grid-area: nine;
+}
+.subtract {
+  background-color: #ff8c00;
+  color: #fff;
+  border-width: 1px;
+  grid-area: subtract;
+}
+.four {
+  grid-area: four;
+}
+.five {
+  grid-area: five;
+}
+.six {
+  grid-area: six;
+}
+.multiply {
+  background-color: #ff8c00;
+  color: #fff;
+  border-width: 1px;
+  grid-area: multiply;
+}
+.one {
+  grid-area: one;
+}
+.two {
+  grid-area: two;
+}
+.three {
+  grid-area: three;
+}
+.divide {
+  background-color: #ff8c00;
+  color: #fff;
+  border-width: 1px;
+  grid-area: divide;
+}
+.zero {
+  grid-area: zero;
+}
+.equal {
+  background-color: #ff8c00;
+  border-width: 1px;
+  color: #fff;
+  grid-area: equal;
+}
+
+.calc-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "input input input input"
+    "clear clear backspace add"
+    "seven eight nine subtract"
+    "four five six multiply"
+    "one two three divide"
+    "zero zero zero equal";
+}
